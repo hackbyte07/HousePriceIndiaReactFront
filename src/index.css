@@ -1,0 +1,7 @@
+/* src/tailwind.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional: If you want to include DaisyUI themes */
+@import 'daisyui';
