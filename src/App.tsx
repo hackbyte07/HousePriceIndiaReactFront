@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useState, ChangeEvent, FormEvent } from "react";
+import './App.css'
 
 interface FormValues {
   bedrooms: number;
@@ -92,10 +93,12 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gray-100 p-4">
+    <body  className="flex justify-center items-center min-h-screen bg-gray-100 p-4" >
       <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-4xl">
         <h1 className="text-3xl font-bold mb-6 text-center text-black">
-          FindYourHome
+          FindYourHome <label className="text-orange-500">
+            India
+          </label>
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           {Object.keys(formValues).map((key) => (
@@ -135,14 +138,14 @@ const App: React.FC = () => {
             </label>
             <input
               type="text" // Use text to support float values
-              className="input text-red-700 font-bold w-full text-lg bg-white"
+              className="input text-green-700 font-bold w-full text-lg bg-white"
               value={'Rs. ' + price}
               readOnly
             />
           </div>
         )}
       </div>
-    </div>
+    </body>
   );
 };
 
