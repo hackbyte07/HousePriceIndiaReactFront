@@ -93,11 +93,11 @@ const App: React.FC = () => {
 
   return (
     <div className="flex justify-center items-center min-h-screen bg-gray-100 p-4">
-      <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-2xl">
+      <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-4xl">
         <h1 className="text-3xl font-bold mb-6 text-center text-black">
           FindYourHome
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           {Object.keys(formValues).map((key) => (
             <div key={key} className="mb-4 w-full">
               <label
